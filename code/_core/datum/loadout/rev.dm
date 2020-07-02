@@ -15,7 +15,7 @@
 
 	if(istype(I,/obj/item/weapon/ranged/))
 		var/obj/item/weapon/ranged/R = I
-		R.firing_pin = /obj/item/firing_pin/electronic/iff/syndicate
+		R.firing_pin = /obj/item/firing_pin/electronic/iff/revolutionary
 
 	if(istype(I,/obj/item/weapon/ranged/bullet/magazine))
 		var/obj/item/weapon/ranged/bullet/magazine/M = I
@@ -37,7 +37,7 @@
 		/obj/item/clothing/feet/shoes/winter/left,
 		/obj/item/clothing/back/storage/backpack/explorer,
 		/obj/item/clothing/belt/storage/tool/full,
-		/obj/item/weapon/ranged/bullet/magazine/rifle/russian,
+		/obj/item/weapon/ranged/bullet/magazine/rifle/ak13,
 		/obj/item/magazine/rifle_762_short,
 		/obj/item/magazine/rifle_762_short,
 		/obj/item/magazine/rifle_762_short,

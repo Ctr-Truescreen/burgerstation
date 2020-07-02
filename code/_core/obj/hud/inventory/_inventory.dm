@@ -78,7 +78,7 @@
 
 /obj/hud/inventory/proc/is_occupied(var/ignore_held = TRUE, var/ignore_worn = TRUE)
 
-	if(get_top_held_object())
+	if(!ignore_held && get_top_held_object())
 		return TRUE
 
 	if(!ignore_worn && get_top_worn_object())
@@ -607,8 +607,6 @@
 		return FALSE
 
 	if(worn_slots <= 0)
-		if(messages)
-			owner.to_chat(span("notice","You can't wear \the [I.name] like this!"))
 		return FALSE
 
 	if(is_occupied(TRUE,TRUE))
